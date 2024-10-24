@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Exemple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="logo.svg" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="register-btn">
+            <a href="#register" class="btn">Register Now</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Great software is built with amazing developers</h1>
+                <p>We help build and manage a team of world-class developers to bring your vision to life.</p>
+            </div>
+            <div class="hero-image">
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <form class="subscribe-form">
+                <input type="email" placeholder="Subscribe newsletter" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="sponsors">
+                <p>Sponsored by:</p>
+                <img src="path-to-paypal-logo.png" alt="Paypal">
+                <img src="path-to-google-logo.png" alt="Google">
+                <img src="path-to-dropbox-logo.png" alt="Dropbox">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7b2cbf;
+}
+
+.register-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #7b2cbf;
+    border-radius: 6px;
+    color: #7b2cbf;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #7b2cbf;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 7%;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.subscribe-form button {
+    padding: 1rem 2rem;
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #6a24a6;
+}
+
+.sponsors {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0.6;
+}
+
+.sponsors span {
+    color: #666;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+;;;;;
