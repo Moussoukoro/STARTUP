@@ -166,8 +166,16 @@ body {
         /* Si l'image est dans une autre section, remplacez .hero-image par la classe appropriée */
         
         /* Pour centrer le texte dans la section */
+
+
+        .serv{
+            padding: 4rem 7%;
+            background-color: white;
+        }
 .serv-text {
     text-align: center; /* Centre le texte horizontalement */
+    margin-bottom: 3rem;
+
 }
 
 /* Pour changer la couleur de h3 */
@@ -204,19 +212,19 @@ body {
 }
 
 .icon-yellow {
-    background-color: #FFF3D3;
+    background-color: #FFCC40;
 }
 
 .icon-cyan {
-    background-color: #E4FFEB;
+    background-color: #25D9D9;
 }
 
 .icon-blue {
-    background-color: #E4F4FF;
+    background-color: #0898E7;
 }
 
 .icon-coral {
-    background-color: #FFEAE5;
+    background-color: #FF9066;
 }
 
 .feature-card h3 {
@@ -765,6 +773,12 @@ body {
     .support-image {
         order: -1;
     }
+    .support-image img {
+        width: 300px; /* Définit la largeur de l'image */
+        height: auto; /* Garde les proportions de l'image */
+    }
+    
+    
 }
 
 
